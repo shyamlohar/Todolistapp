@@ -7,8 +7,17 @@ $('.task').each(function(){
     })
 })
 
-$('.task').each(function(){
+$('p').each(function(){
     $(this).click(function(){
         $(this).css({'text-decoration':'line-through'})
+    })
+})
+
+$('.btn').each(function(){
+    $(this).click(function(){
+        $(this).parent().fadeOut(function(){
+            $(this).remove()
+            console.log(this)
+        })
     })
 })
