@@ -6,3 +6,9 @@ $('.task').each(function(){
         $(this).css({ 'margin-left': '-5vw' })
     })
 })
+
+$('.task').each(function(){
+    $(this).click(function(){
+        $(this).css({'text-decoration':'line-through'})
+    })
+})
