@@ -31,13 +31,23 @@
 
 .container .input {
   height: 8vh;
+  transition: 0.4s;
+  overflow: hidden;
 }
 
 .container .input input {
   height: 100%;
   width: 100%;
+  font-size: 2rem;
   border: none;
+  padding: 20px;
   background-color: lightblue;
+  transition: 0.6s;
+}
+
+.container .input input:focus {
+  outline: none;
+  background-color: lightgray;
 }
 
 .tasks {
@@ -46,7 +56,6 @@
 
 .tasks .task {
   height: 6vh;
-  margin-left: -5vw;
   transition: 0.5s;
   display: flex;
   justify-content: flex-start;
@@ -54,7 +63,9 @@
 
 .tasks .task .btn {
   display: inline-flex;
-  width: 5vw;
+  width: 0;
+  overflow: hidden;
+  transition: 0.6s;
   background-color: crimson;
   height: 100%;
   color: white;
@@ -69,5 +80,17 @@
   height: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.task:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.task:hover .btn {
+  width: 5vw;
+}
+
+.inactive {
+  height: 0 !important;
 }
 /*# sourceMappingURL=style.css.map */
