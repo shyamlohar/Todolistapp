@@ -14,6 +14,15 @@
 .container .header {
   background-color: cornflowerblue;
   height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .header span {
+  color: white;
+  font-size: 2rem;
+  margin: auto;
 }
 
 .container .header .addbutton {

@@ -6,11 +6,13 @@ $('p').each(function(){
     })
 })
 
-//function to remove tak
+//function to remove task
 
 $('.tasks').on('click','.btn', function (e) {
-    $(this).parent().fadeOut(function () {
-        $(this).remove()})
+    $(this).parent().fadeOut(300,function () {
+        $(this).remove()});
+        e.stopPropogation()
+        
 })
 
 

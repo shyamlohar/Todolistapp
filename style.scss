@@ -12,6 +12,14 @@
     .header{
         background-color: cornflowerblue;
         height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            color: white;
+            font-size: 2rem;
+            margin: auto;
+        }
         .addbutton{
             float: right;
             color: ghostwhite;
